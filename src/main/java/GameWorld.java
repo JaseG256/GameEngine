@@ -50,7 +50,7 @@ public abstract class GameWorld {
     }
 
     protected void updateSprites() {
-        for (Sprite sprite : SpriteManager.getAllSprites()) {
+        for (Sprite sprite : spriteManager.getAllSprites()) {
             handleUpdate(sprite);
         }
     }
@@ -70,7 +70,6 @@ public abstract class GameWorld {
                     // object as opposed to one hitting many objects.
                     // To be more accurate comment out the break statement.
                     break;
-                    ;
                 }
             }
         }
